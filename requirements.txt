@@ -1,0 +1,13 @@
+# Document processing
+python-docx==1.1.2
+pypandoc==1.13
+
+# Data handling
+pandas==2.2.3
+
+# PDF processing
+PyPDF2==3.0.1
+reportlab==4.2.5
+
+# Timezone support
+pytz==2024.2
