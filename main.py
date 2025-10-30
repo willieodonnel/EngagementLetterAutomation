@@ -11,7 +11,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.colors import red
 import pytz
 
-database = pd.read_csv('/content/Approved Appraisers.csv')
+database = pd.read_csv('Templates/Approved Appraisers.csv')
 
 # This needs to figure out how to source the inputs while minimizing the amount of necessary inputs from user
 
@@ -176,11 +176,11 @@ def engagement_builder():
   # Load proper document
 
   if letter_type == 'App':
-    doc = Document(f'/content/{loan_type} - Appraisal Engagement Letter.docx') # Build doc object for editing
+    doc = Document(f'Templates/{loan_type} - Appraisal Engagement Letter.docx') # Build doc object for editing
   elif letter_type == 'Sec':
-    doc = Document(f'/content/{loan_type} - Appraisal Review Engagement Letter.docx') # Build doc object for editing
+    doc = Document(f'Templates/{loan_type} - Appraisal Review Engagement Letter.docx') # Build doc object for editing
   else:
-    doc = Document(f'/content/{loan_type} - Environmental Engagement Letter.docx') # Build doc object for editing
+    doc = Document(f'Templates/{loan_type} - Environmental Engagement Letter.docx') # Build doc object for editing
 
   # Current the replacements should be
 
@@ -410,9 +410,9 @@ def dual_engagement_builder():
   # Build a basic function for carrying out this process twice
   def dual_engagement_helper(inputs, letter_type):
     if letter_type == 'App':
-      doc = Document(f'/content/{loan_type} - Appraisal Engagement Letter.docx') # Build doc object for editing
+      doc = Document(f'Templates/{loan_type} - Appraisal Engagement Letter.docx') # Build doc object for editing
     else:
-      doc = Document(f'/content/{loan_type} - Environmental Engagement Letter.docx') # Build doc object for editing
+      doc = Document(f'Templates/{loan_type} - Environmental Engagement Letter.docx') # Build doc object for editing
 
     for paragraph in doc.paragraphs:
         for placeholder, replacement in inputs.items():
