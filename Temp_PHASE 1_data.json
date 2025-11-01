@@ -1,0 +1,30 @@
+{
+  "loan_type": "7A",
+  "letter_type": "PHASE 1",
+  "vendor": {
+    "first_name": "Darrin",
+    "last_name": "Domingo",
+    "company": "EDI Consultants Inc",
+    "email": "ddomingo@edi-consultants.com",
+    "type": "Env",
+    "region": "Nationwide"
+  },
+  "dates": {
+    "current_date": "10/31/2025",
+    "delivery_date": "11/14/2025"
+  },
+  "loan": {
+    "loan_name": "Temp",
+    "loan_number": "4000123131",
+    "cdc_company": "N/A"
+  },
+  "property": {
+    "property_address": "321 ret street",
+    "property_type": "industrial",
+    "sqft": "5444",
+    "property_contact_name": "temp",
+    "property_contact_phone": "temp",
+    "item_to_send": "TBD",
+    "fee": "5000"
+  }
+}
